@@ -114,20 +114,20 @@ public class Design extends JFrame {
 					// Check if the username and password are valid
 					if (rs.next()) {
 					    // The user is authenticated, do something
-						JOptionPane.showMessageDialog(null, "Succefully logged in ");
+						//JOptionPane.showMessageDialog(frame, "Succefully logged in ");
 						//System.out.print("1");
-						//JDialog d = new JDialog(panel, "dialog Box");
+						JDialog d = new JDialog(panel, "dialog Box");
 						 
 			            // create a label
-			            //JLabel l = new JLabel("this is a dialog box");
+			            JLabel l = new JLabel("this is a dialog box");
 			 
-			            //d.add(l);
+			            d.add(l);
 			 
 			            // setsize of dialog
-			            //d.setSize(100, 100);
+			            d.setSize(100, 100);
 			 
 			            // set visibility of dialog
-			           // d.setVisible(true);
+			            d.setVisible(true);
 					} else {
 					    
 						// The username or password is invalid, show an error message
